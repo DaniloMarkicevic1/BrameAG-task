@@ -1,0 +1,294 @@
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("/fonts/Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-image: url("../images/Asymmetry/Assets/background-desktop.jpg");
+  background-repeat: none;
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins-Regular";
+  color:#333333;
+  position: relative;
+  background-color: hsla(0, 0%, 95%, 0.8);
+  float: right;
+  min-height: 100vh;
+  width: 57%;
+  text-align: center;
+  color: #333333;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+  line-height: 300%;
+  color: #333333;
+}
+
+header h2 {
+  font-family: "Poppins-Bold";
+  font-size: 2em;
+}
+
+#logo {
+  background-image: url("../images/Asymmetry/Assets/logo.png");
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 163px;
+  height: 28.8px;
+  margin: 2% auto 5% auto;
+}
+
+#image {
+  display: flex;
+  background-image: url("../images/Asymmetry/Assets/pic1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  margin: 3% auto 5% auto;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+  width: 50%;
+  height: 18vw;
+  border: 12px solid white;
+}
+
+form {
+  width: 85%;
+}
+
+form .inputs {
+  width: 100%;
+}
+
+form .inputs input {
+  width: 27%;
+  font-family: "Poppins-Regular";
+  font-size: 1vw;
+  margin: 0.5% 0.5%;
+  padding: 1.5% 1.5%;
+  border: 2px solid #008e99;
+  background: transparent;
+}
+
+::placeholder {
+  color: Black;
+}
+
+#checkboxContainer {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: left;
+  float: left;
+  padding-left: 3%;
+  margin-top: 2%;
+}
+
+.container {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 6%;
+  line-height: 100%;
+  margin-bottom: 2%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #008e99;
+}
+
+/* On mouse-over, add a grey background color */
+/* .container:hover input ~ .checkmark {
+  background-color: #01becc;
+} */
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #008e99;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#submitButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#submitButton button {
+  cursor: pointer;
+  font-family: "Poppins-Regular";
+  font-size: inherit;
+  border: none;
+  color: white;
+  background-color: #008e99;
+  width: 25%;
+  height: 3vw;
+}
+
+#footer {
+  margin-top: auto;
+  margin-bottom: 1%;
+}
+
+.bold {
+  font-family: "Poppins-Bold";
+  text-decoration: none;
+  color: #333333;
+}
+
+.bold:active {
+  text-decoration: none;
+  color: #333333;
+}
+
+#vl-middle {
+  position: absolute;
+  left: -15px;
+  bottom: 0;
+  border-left: 25px solid #008e99;
+  border-top: 35px solid transparent;
+  border-bottom: 70vh solid #008e99;
+}
+
+#vl-right {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 55vh solid #008e99;
+  border-left: 20px solid #008e99;
+  opacity: 50%;
+}
+
+#vl-left {
+  position: absolute;
+  left: -35px;
+  bottom: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 40vh solid #008e99;
+  border-right: 20px solid #008e99;
+  opacity: 80%;
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    background-image: url(../images/Asymmetry/Assets/background-mob.jpg);
+    background-repeat: none;
+  }
+  #page {
+    width: 86%;
+  }
+  #logo {
+    width: 40%;
+  }
+
+  header h2 {
+    font-size: 5vw;
+    margin-bottom: 3%;
+  }
+  header p {
+    font-size: 3.5vw;
+    line-height: 120%;
+  }
+
+  header {
+    width: 80%;
+    margin-bottom: 3%;
+  }
+  #image {
+    width: 80%;
+    height: 41vw;
+    margin-bottom: 6%;
+    border: 10px solid white;
+  }
+
+  form .inputs input {
+    width: 90%;
+    font-size: 4vw;
+    text-align: center;
+    margin: 1.5% auto;
+    border: 1px solid #008e99;
+  }
+
+  .container {
+    font-size: 3vw;
+    margin-bottom: 3%;
+    padding-left: 10%;
+  }
+
+  #submitButton button {
+    margin-top: 15%;
+    width: 50%;
+    height: 10vw;
+    font-size: 2.8vw;
+  }
+
+  #footer {
+    font-size: 2.8vw;
+    width: 90%;
+    margin: auto auto 1% auto;
+  }
+
+  #vl-right {
+    display: none;
+  }
+}

@@ -1,0 +1,187 @@
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("/fonts/Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-image: url(../images/Asymmetry/Assets/background-desktop.jpg);
+  background-repeat: none;
+}
+
+header h2 {
+  font-family: "Poppins-Bold";
+  font-size: 2em;
+}
+
+p {
+  width: 90%;
+  margin: 5% auto 0 auto;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins-Regular";
+  color:#333333;
+  position: relative;
+  background-color: hsla(0, 0%, 95%, 0.8);
+  float: right;
+  min-height: 100vh;
+  width: 57%;
+  text-align: center;
+  color: #333333;
+}
+
+#vl-middle {
+  position: absolute;
+  left: -15px;
+  bottom: 0;
+  border-left: 25px solid #008e99;
+  border-top: 35px solid transparent;
+  border-bottom: 70vh solid #008e99;
+}
+
+#vl-right {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 55vh solid #008e99;
+  border-left: 20px solid #008e99;
+  opacity: 50%;
+}
+
+#vl-left {
+  position: absolute;
+  left: -35px;
+  bottom: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 40vh solid #008e99;
+  border-right: 20px solid #008e99;
+  opacity: 80%;
+}
+
+#logo {
+  background-image: url("../images/Asymmetry/Assets/logo.png");
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 163px;
+  height: 28.8px;
+  margin: 2% auto 10% auto;
+}
+
+#image {
+  display: flex;
+  background-image: url("../images/Asymmetry/Assets/pic4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  margin: 3% auto 1% auto;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+  width: 50%;
+  height: 18vw;
+  border: 12px solid white;
+}
+
+#container {
+  display: inline-flex;
+  width: 38%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#linkedin,
+#instagram,
+#facebook,
+#youtube,
+#globe {
+  cursor: pointer;
+  background-color: #008e99;
+  width: 40px;
+  height: 40px;
+  line-height: 50px;
+  color: white;
+  margin: auto;
+}
+
+#footer {
+  margin-top: auto;
+  margin-bottom: 1%;
+  font-size: 17px;
+}
+
+.bold {
+  font-family: "Poppins-Bold";
+  text-decoration: none;
+  color: #333333;
+}
+
+.bold:active {
+  text-decoration: none;
+  color: #333333;
+}
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    background-image: url(../images/Asymmetry/Assets/background-mob.jpg);
+    background-repeat: none;
+  }
+
+  #page {
+    width: 86%;
+  }
+
+  #logo {
+    width: 30%;
+    margin-bottom: 33%;
+  }
+
+  p {
+    font-size: 1.5em;
+    margin-top: 8%;
+    margin-bottom: 9%;
+  }
+
+  #image {
+    width: 80%;
+    height: 50vw;
+    margin-bottom: 4%;
+  }
+
+  #container {
+    width: 80%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  #footer {
+    font-size: 2.8vw;
+    width: 90%;
+    margin: auto auto 1% auto;
+  }
+
+  #vl-right { 
+    display: none;
+  }
+}

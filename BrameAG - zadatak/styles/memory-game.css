@@ -1,0 +1,242 @@
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("/fonts/Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-image: url(../images/Asymmetry/Assets/background-desktop.jpg);
+  background-repeat: no-repeat;
+}
+
+.logo {
+  background: url("../images/Asymmetry/Assets/logo.png") no-repeat;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 163px;
+  height: 28.8px;
+  margin-top: 2%;
+  margin-bottom: 15%;
+}
+
+h2 {
+  font-family: "Poppins-Bold";
+  margin-bottom: 4%;
+  /* font-size: 4.5vw; */
+}
+
+#page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins-Regular";
+  color:#333333;
+  position: relative;
+  background-color: hsla(0, 0%, 95%, 0.8);
+  float: right;
+  min-height: 100vh;
+  width: 57%;
+  text-align: center;
+  color: #333333;
+}
+
+.imageContainerBottom {
+  display: inline-flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+.imageContainerTop {
+  display: inline-flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+
+/* staviti inline flex + majanje + sirina na % */
+/* .image {
+  display: inline-block;
+  cursor: pointer;
+  width: 20%;
+  height: 18vh;
+  margin: 10px;
+  outline: 7px solid #008e99;
+  outline-offset: -7px;
+} */
+
+#image1 {
+  background-image: url("../images/Asymmetry/Assets/pic6.jpg");
+}
+#image2 {
+  background-image: url("../images/Asymmetry/Assets/pic2.jpg");
+}
+#image3 {
+  background-image: url("../images/Asymmetry/Assets/pic6.jpg");
+}
+#image4 {
+  background-image: url("../images/Asymmetry/Assets/pic5.jpg");
+}
+#image5 {
+  background-image: url("../images/Asymmetry/Assets/pic8.jpg");
+}
+#image6 {
+  background-image: url("../images/Asymmetry/Assets/pic5.jpg");
+}
+#image7 {
+  background-image: url("../images/Asymmetry/Assets/kartica memory.png");
+}
+#image8 {
+  background-image: url("../images/Asymmetry/Assets/pic2.jpg");
+}
+
+#image1,
+#image2,
+#image3,
+#image4,
+#image5,
+#image6,
+#image7,
+#image8 {
+  cursor: pointer;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 22%;
+  height: 11vw;
+  margin-top: 2.5%;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 6px solid #008e99;
+  outline-offset: -6px;
+}
+
+.bold {
+  font-family: Poppins-Bold;
+  text-decoration: none;
+  color: #333333;
+}
+
+.bold:active {
+  text-decoration: none;
+  color: #333333;
+}
+
+#footer {
+  margin-top: auto;
+  margin-bottom: 1%;
+}
+
+
+#vl-middle {
+  position: absolute;
+  left: -15px;
+  bottom: 0;
+  border-left: 25px solid #008e99;
+  border-top: 35px solid transparent;
+  border-bottom: 70vh solid #008e99;
+}
+
+#vl-right {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 55vh solid #008e99;
+  border-left: 20px solid #008e99;
+  opacity: 50%;
+}
+
+#vl-left {
+  position: absolute;
+  left: -35px;
+  bottom: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 40vh solid #008e99;
+  border-right: 20px solid #008e99;
+  opacity: 80%;
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    background-image: url(../images/Asymmetry/Assets/background-mob.jpg);
+    background-repeat: none;
+  }
+
+  #page {
+    width: 86%;
+  }
+
+  .imageContainerBottom {
+    display: inline-block;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto 0 auto;
+  }
+  .imageContainerTop {
+    display: inline-block;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto 0 auto;
+  }
+  #image1,
+  #image2,
+  #image3,
+  #image4,
+  #image5,
+  #image6,
+  #image7,
+  #image8 {
+    display: inline-block;
+    cursor: pointer;
+    width: 40%;
+    height: 24vw;
+    margin: 10px;
+    outline: 4px solid #008e99;
+    outline-offset: -4px;
+  }
+  .logo {
+    margin-top: 3%;
+    width: 30%;
+    height: 4vh;
+  }
+
+  #footer {
+    font-size: 2.8vw;
+    width: 90%;
+  }
+
+  #vl-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    background-image: url(../images/Asymmetry/Assets/background-mob.jpg);
+    background-repeat: none;
+  }
+
+  .image {
+    width: 8em;
+    height: 8em;
+    margin: 5px;
+  }
+
+  #vl-right {
+    display: none;
+  }
+
+  #footer {
+    margin-top: auto;
+  }
+}

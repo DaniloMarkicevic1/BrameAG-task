@@ -1,0 +1,182 @@
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("/fonts/Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-image: url(../images/Asymmetry/Assets/background-desktop.jpg);
+  background-repeat: none;
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins-Regular";
+  position: relative;
+  background-color: hsla(0, 0%, 95%, 0.8);
+  float: right;
+  min-height: 100vh;
+  width: 57%;
+  text-align: center;
+  color: #333333;
+}
+
+#logo {
+  background-image: url("../images/Asymmetry/Assets/logo.png");
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 163px;
+  height: 28.8px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+#title {
+  font-family: "Poppins-Bold";
+  margin-bottom: 4%;
+}
+
+.text {
+  font-family: "Poppins-Regular";
+  font-size: 18px;
+  line-height: 100%;
+  color: #333333;
+}
+
+#image {
+  background-image: url("/images/Asymmetry/Assets/Intro.jpg");
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  margin: 5% auto 5% auto;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+  width: 50%;
+  height: 18vw;
+  border: 12px solid white;
+}
+
+#startButton {
+  width: 100%;
+  min-height: 17vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#startButton button {
+  cursor: pointer;
+  font-family: "Poppins-Regular";
+  font-size: inherit;
+  border: none;
+  color: white;
+  background-color: #008e99;
+  width: 18%;
+  height:5vh;
+}
+
+.bold {
+  font-family: "Poppins-Bold";
+  text-decoration: none;
+  color: #333333;
+}
+
+.bold:active {
+  text-decoration: none;
+  color: #333333;
+}
+
+#footer {
+  margin-top: auto;
+  margin-bottom: 1%;
+}
+
+#vl-middle {
+  position: absolute;
+  left: -15px;
+  bottom: 0;
+  border-left: 25px solid #008e99;
+  border-top: 35px solid transparent;
+  border-bottom: 70vh solid #008e99;
+}
+
+#vl-right {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 55vh solid #008e99;
+  border-left: 20px solid #008e99;
+  opacity: 50%;
+}
+
+#vl-left {
+  position: absolute;
+  left: -35px;
+  bottom: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 40vh solid #008e99;
+  border-right: 20px solid #008e99;
+  opacity: 80%;
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    background-image: url(../images/Asymmetry/Assets/background-mob.jpg);
+    background-repeat: none;
+  }
+
+  #logo {
+    width: 30%;
+  }
+
+  #page {
+    width: 85%;
+  }
+
+  #title {
+    font-size: 4vw;
+  }
+
+  #image {
+    height: 50vw;
+    width: 70%;
+    padding: 7px;
+  }
+
+  .text {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 140%;
+  }
+
+  .text p {
+    font-size: 3.5vw;
+  }
+
+  #startButton button {
+    width: 35%;
+  }
+  
+  #footer {
+    font-size: 2.8vw;
+    width: 90%;
+    margin: auto auto 1% auto;
+  }
+  #vl-right {
+    display: none;
+  }
+
+}

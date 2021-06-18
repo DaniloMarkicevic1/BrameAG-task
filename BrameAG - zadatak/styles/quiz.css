@@ -1,0 +1,185 @@
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("/fonts/Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-image: url("../images/Asymmetry/Assets/background-desktop.jpg");
+  background-repeat: none;
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins-Regular";
+  color: #333333;
+  position: relative;
+  background-color: hsla(0, 0%, 95%, 0.8);
+  float: right;
+  min-height: 100vh;
+  width: 57%;
+  text-align: center;
+  color: #333333;
+}
+
+#logo {
+  background-image: url("../images/Asymmetry/Assets/logo.png");
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 163px;
+  height: 28.8px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+#title {
+  margin-bottom: 2.5%;
+}
+
+#title h2 {
+  font-family: "Poppins-Bold";
+  font-size: 1.7em;
+}
+
+#questionText p {
+  font-size: 18px;
+  color: #333333;
+}
+
+#image {
+  display: flex;
+  background-image: url("../images/Asymmetry/Assets/pic2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+  width: 50%;
+  height: 18vw;
+  border: 12px solid white;
+}
+
+#buttonContainer {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 5%;
+}
+
+#buttonContainer button {
+  cursor: pointer;
+  font-family: "Poppins-Regular";
+  font-size: 1.5vh;
+  border: none;
+  color: white;
+  background-color: #008e99;
+  margin-top: 4%;
+  height: 5vh;
+}
+
+#footer {
+  margin-top: auto;
+  margin-bottom: 1%;
+  font-size: 17px;
+}
+
+.bold {
+  font-family: "Poppins-Bold";
+  text-decoration: none;
+  color: #333333;
+}
+
+.bold:active {
+  text-decoration: none;
+  color: #333333;
+}
+#vl-middle {
+  position: absolute;
+  left: -15px;
+  bottom: 0;
+  border-left: 25px solid #008e99;
+  border-top: 35px solid transparent;
+  border-bottom: 70vh solid #008e99;
+}
+
+#vl-right {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 55vh solid #008e99;
+  border-left: 20px solid #008e99;
+  opacity: 50%;
+}
+
+#vl-left {
+  position: absolute;
+  left: -35px;
+  bottom: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 40vh solid #008e99;
+  border-right: 20px solid #008e99;
+  opacity: 80%;
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    background-image: url(../images/Asymmetry/Assets/background-mob.jpg);
+    background-repeat: none;
+  }
+
+  #page {
+    width: 86%;
+  }
+
+  #logo {
+    width: 30%;
+  }
+
+  #title h2 {
+    font-family: "Poppins-Bold";
+    font-size: 4vw;
+  }
+
+  #questionText p {
+    font-size: 3vw;
+  }
+
+  #image {
+    width: 80%;
+    height: 41vw;
+    border: 10px solid white;
+  }
+
+  #buttonContainer button {
+    height: 6vh;
+    margin-bottom: 2%;
+    font-size: 2.8vw;
+  }
+
+  #buttonContainer {
+    width: 85%;
+  }
+
+  #footer {
+    font-size: 2.8vw;
+    width: 90%;
+    margin: auto auto 1% auto;
+  }
+
+  #vl-right {
+    display: none;
+  }
+}

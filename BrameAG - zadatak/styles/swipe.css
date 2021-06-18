@@ -1,0 +1,226 @@
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("/fonts/Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-image: url("../images/Asymmetry/Assets/background-desktop.jpg");
+  background-repeat: none;
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins-Regular";
+  color:#333333;
+  position: relative;
+  background-color: hsla(0, 0%, 95%, 0.8);
+  float: right;
+  min-height: 100vh;
+  width: 57%;
+  text-align: center;
+  color: #333333;
+}
+
+#logo {
+  background-image: url("../images/Asymmetry/Assets/logo.png");
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 163px;
+  height: 28.8px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+#questionText {
+  font-size: 12px;
+  margin-bottom: 3%;
+  font-family: "Poppins-Bold";
+  color: #333333;
+}
+
+#image {
+  background-image: url("../images/Asymmetry/Assets/pic3.jpg");
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+  width: 50%;
+  height: 18vw;
+  border: 12px solid white;
+}
+
+#buttonsContainer {
+  margin-bottom: auto;
+  width: 100%;
+}
+
+.arrowButtons {
+  display: inline-flex;
+  width: 55%;
+  margin-top: 5%;
+}
+
+.arrowLeftButton {
+  margin-right: auto;
+  margin-left: auto;
+  width: 0px;
+  height: 0px;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-right: 30px solid #008e99;
+}
+.arrowRightButton {
+  margin-left: auto;
+  margin-right: auto;
+  width: 0px;
+  height: 0px;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid #008e99;
+}
+
+.arrowLeftButton, .arrowRightButton, .answerButtons button:hover{
+  cursor: pointer;
+}
+.answerButtons {
+  display: inline-flex;
+  width: 80%;
+}
+
+.answerButtons button {
+  border: none;
+  background-color: #008e99;
+  color: white;
+  font-family: "Poppins-Regular";
+  font-size: 18px;
+  width: 30%;
+  height: 3vw;
+  margin-top: 7%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#footer {
+  margin-top: auto;
+  margin-bottom: 1%;
+}
+
+.bold {
+  font-family: "Poppins-Bold";
+  text-decoration: none;
+  color: #333333;
+}
+
+.bold:active {
+  text-decoration: none;
+  color: #333333;
+}
+
+#vl-middle {
+  position: absolute;
+  left: -15px;
+  bottom: 0;
+  border-left: 25px solid #008e99;
+  border-top: 35px solid transparent;
+  border-bottom: 70vh solid #008e99;
+}
+
+#vl-right {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 55vh solid #008e99;
+  border-left: 20px solid #008e99;
+  opacity: 50%;
+}
+
+#vl-left {
+  position: absolute;
+  left: -35px;
+  bottom: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 40vh solid #008e99;
+  border-right: 20px solid #008e99;
+  opacity: 80%;
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    background-image: url(../images/Asymmetry/Assets/background-mob.jpg);
+    background-repeat: none;
+  }
+  #page {
+    width: 85%;
+  }
+
+  #logo {
+    margin-top: 3%;
+    margin-bottom: 37%;
+    width: 30%;
+  }
+
+  #questionText {
+    margin-bottom: 4%;
+    font-size: 2.6vw;
+  }
+
+  #text {
+    margin-bottom: 5%;
+    width: 100%;
+    line-height: 120%;
+    font-size: 3.7vw;
+  }
+  #text p {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 0 auto;
+  }
+
+  #image {
+    width: 80%;
+    height: 40vw;
+    padding: 5px;
+  }
+
+  .arrowButtons {
+    display: inline-flex;
+    width: 80%;
+  }
+
+  .answerButtons {
+    display: inline-flex;
+    align-items: center;
+    width: 95%;
+  }
+  .answerButtons button {
+    width: 45%;
+    height: 10vw;
+  }
+
+  #vl-right { 
+    display: none;
+  }
+  #footer {
+    font-size: 2.8vw;
+    width: 90%;
+    margin: auto auto 1% auto;
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/registration.css" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <div id="logo"></div>
+        <h2>AWESOME JOB</h2>
+        <p>Entice your players to register so they can get a prize!</p>
+      </header>
+
+      <div id="image"></div>
+
+      <form id="form">
+        <div class="inputs">
+          <input type="text" placeholder="First name" name="firstname" />
+          <input type="text" placeholder="Last name" name="lastname" />
+          <input type="email" placeholder="E-Mail address" name="email" />
+          <input type="text" placeholder="Address" name="address" />
+          <input type="number" placeholder="Phone" name="phone" />
+          <input type="number" placeholder="Postal code" name="postalcode" />
+        </div>
+
+        <div id="checkboxContainer">
+          <label class="container"
+            >I have read and accept
+            <a href="#" class="bold">Terms of service</a>
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="container"
+            >I have read and accept <a href="#" class="bold">Privacy policy</a>
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="container"
+            >I would like to receive news by e-mail.
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+
+        <div id="submitButton">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+
+      <div id="footer">
+        <footer>
+          © 2021, Asymmetry.
+          <a href="privacy-policy" class="bold">Privacy policy - </a
+          ><a href="terms-of-service" class="bold">Terms of service</a>
+        </footer>
+      </div>
+      <div id="vl-middle"></div>
+      <div id="vl-left"></div>
+      <div id="vl-right"></div>
+    </div>
+
+    <script src="../scripts/registration.js"></script>
+  </body>
+</html>
